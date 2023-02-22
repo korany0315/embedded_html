@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>font</title>
+
+<style type="text/css">
+		
+		.a1{ font-size: 20px;}
+		.a2{ font-style: italic;}
+		.a3{ font-weight: bold;}
+		.a4{ font-family: "휴먼둥근헤드라인", "궁서", "돋움", sans-serif;}/* 영폰트는 ""쓰지 않는다  */
+		.a5-1{ font-variant: small-caps;}
+		.a5{ font-variant: inherit;}
+		
+		/* 폰트의 속성을 한번에 적용하려면 다음의 순서를 지켜줘야한다.
+			weight, style, variant, size, family
+
+		.a6{font: bold italic small-caps 30px "돋움",sans-serif;}
+		*/
+		.a6{ font: 30px "돋움" sans-serif;}
+		
+		/* 속성을 한가지만 사용할 거라면 풀 네임을 모두 기술하여야 한다 
+			font : 30px (X)
+			font : "굴림" (X)
+			
+			font-size : 20px (O) 
+			font-family : "굴림"(O)		
+		*/
+		
+</style>
+</head>
+<body>
+	
+	<p>
+		기본 글자
+	</p>
+	<p class="a2">
+	<p class="a1">
+		글자 크기
+	</p>
+	<p class="a2">
+		글자 스타일
+	</p>	
+	<p class="a3">
+		글자 굵기
+	</p>	
+	<p class="a4">
+		글자 글꼴 <br>
+		font-family: <br>
+		여러개의 글꼴을 미리 준비해 두고, 브라우저에서 글꼴이 지원되지 않는다면, <br>
+		가장 표준적인 글꼴인 sans-serif를 사용한다.
+	</p>
+	<p class="a5">
+		 <p class="a5-1">Font-variant : small-caps; 소문자 사이즈의 대문자<p>	
+		 font-variant: inherit;
+	</p>
+	<p class="a6">
+		 한줄로 합쳐진 font의 css속성 접근하기
+	</p>
+	
+
+</body>
+</html>

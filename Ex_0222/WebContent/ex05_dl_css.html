@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>dl응용 css정의 하기</title>
+
+<style type="text/css">
+		
+		/* body 내부의 모든 객체 (태그 , 요소 ) 를 의미하는 '*'
+			마진과 패딩을 제거
+		 */
+		*{margin: 0; padding:0}
+		
+		dl{border: 5px double gray;
+			width: 600px;
+			
+			/* 
+				좌우 마진이 auto라면 브라우저의 중앙으로 자동 정렬된다
+				auto속성을 사용하려면 width가 적용 되어있어야한다!
+			 */
+			margin: 0 auto; /* 상하는 0, 좌우는 중앙정렬  => 브라우저의 사이즈와 상관없이 가운데 정렬 하고싶어*/
+		}
+		
+		dt{ padding: 15px 0;
+			text-align: center;
+			background: #aaf;
+			font: bold 20px sans-serif;
+			border-bottom: 5px solid gray;
+			letter-spacing: 10px; /* 자간 */
+		}
+		
+		dd{
+			padding: 10px 0;
+			background: silver;
+			text-align: center;
+			
+		}
+		
+		.line{
+			border-bottom: 3px dotted gray;	
+		}
+		
+		
+		
+</style>
+</head>
+<body>
+
+	<dl>
+		<dt>한국의 속담</dt>
+		<dd class="line">발 없는 말이 천 리 간다 </dd>
+		<dd>낮 말은 새가 듣고 밤 말은 쥐가 듣는다</dd>
+		
+	</dl>
+	<br>
+	<p> 123123 </p>
+
+</body>
+</html>

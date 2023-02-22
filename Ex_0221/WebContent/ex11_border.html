@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>border(선)</title>
+
+<style>
+	p{border-width: 20px; border-color: gray;} 
+	.box1{ border-style: none; }
+	.box2{ border-style: hidden; }
+	.box3{ border-style: dotted; }
+	.box4{ border-style: dashed; }
+	.box5{ border-style: solid; }
+	.box6{ border-style: double; }
+	.box7{ border-style: groove; }
+	.box8{ border-style: ridge; }
+	.box9{ border-style: inset; }
+	
+	.box10{ border: 10px green dotted;  }
+	/* border의 width, color, style을 함께 정의한 구조 (세가지 속성을 모두 갖고있어야함 순서는 달라져도 됨) */
+	
+	.div1{ border: 10px solid green; width: 200px; height: 100px;}
+	/* div은 블록요소로 너비가 줄어들어도 블럭요소를유지한다. */
+	
+	.div2{ border-left: 10px solid gray; border-right: 10px solid green;}
+	
+	/* 상, 우, 하, 좌 각각의 속성들을 별개로 적용하고싶다면 border:가 아닌 
+		border-width, border-style 등 풀네임을 사용해야한다  */
+	.div3{ border-width: 10px 20px 30px 40px;
+		/*  시계방향으로 지정 : 상 우 하 좌 */
+			border-style: solid;
+			border-color: blue red;}
+						/* 상하   좌우 */
+</style>
+</head>
+<body>
+<!-- p태그는 단락의 간격을 구분해주기때문에 문장과 문장사이에 간격이 존재 
+	
+-->
+	<p class="box1"> border-style: none; </p>
+	<p class="box2"> border-style: hidden; </p>
+	<p class="box3"> border-style: dotted; </p>
+	<p class="box4"> border-style: dashed; </p>
+	<p class="box5">  border-style: solid; </p>
+	<p class="box6">  border-style: double; </p>
+	<p class="box7">border-style: groove;</p>
+	<p class="box8">  border-style: ridge; </p>
+	<p class="box9">  border-style: inset; </p>
+	<p class="box10"> border: 10px green dotted;  </p>
+	
+	<div class="div1">
+		 border: 10px solid green; width: 200px; height: 100px
+	</div>
+	<div class="div2">
+		border-left: 10px solid gray; border-right: 10px solid green;
+	</div>
+	<div class="div3">
+		div3의 border 속성
+	</div>
+</body>
+</html>

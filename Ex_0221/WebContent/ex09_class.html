@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.box {
+	color: red;
+}
+/* 공백은 클래스가 가진 태그의 내부로 들어가라는 의미가 있는 코드의 개념  */
+.box h2 {color: red;}
+.box p {color: green;}
+.s_blue{color: blue;}
+span {color: gray;}
+
+/* 중요!! */
+div .box{color : aqua;}
+/* div안으로 들어가서 box클래스가 있다면 스타일을 적용해 */
+
+div.box{color: lime;}
+/* div인데 이름이box인 클래스를 찾아 */
+
+/* depth로 정확하게 style지정하기 */
+.box .box2 .s_blue{color: navy;}
+/* box안으로 들어가서 box2안으로 들어가서.s_blue 클래스의 스타일을 적용해 */
+
+h2.s_green{color: purple;}
+/* h2안으로 들어가서 .s_green 클래스의 스타일을 적용해  */
+
+
+</style>
+
+<meta charset="UTF-8">
+<title>클래스의 깊이</title>
+</head>
+<body>
+	<div class="box">
+		<h2>
+			<span>클래스</span>연습중입니다
+		</h2>
+		<p>우직한 로디 수줍은 루피</p>
+
+		<div class="box2">
+			<h2>
+				<span class="s_blue">클래스</span>연습중입니다
+			</h2>
+		</div>
+	</div>
+
+	<h2>
+		클래스 <span class="s_green">연습중</span>입니다
+	</h2>
+</body>
+</html>

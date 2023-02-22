@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>메뉴 만들기</title>
+<style type="text/css">
+
+			ul{width: 130px; }
+				
+			li{list-style: none;}
+			
+			a{	
+				background: silver;
+				text-decoration: none;/* a태그의 밑줄 제거 */
+				/* a태그는 인라인 요소라 패딩,마진이 적용되지 않는다!! => display블록으로 바꿔줘야함
+					inline속성일땐 글씨 이외의 곳은 클릭되지 않는다.
+				 */
+				padding: 5px;
+				display : block;
+				margin: 3px 0;
+			}
+			
+			/* a태그에 마우스를 올렸을 때 동작하는 가상 클래스 */
+			a:hover {
+						font-weight: bold;
+						background: gray;
+						color: white;
+						
+					}
+			
+			
+</style>
+</head>
+<body>
+		
+		<div>
+			<h1>주 메뉴</h1>
+			<ul>
+				<li><a href="#">COMPANY</a></li>
+				<li><a href="#">PRODUCT</a></li>
+				<li><a href="#">SERVICE</a></li>
+				<li><a href="#">COMUNITY</a></li>
+			</ul>
+		</div>
+	
+</body>
+</html>
